@@ -1,0 +1,36 @@
+fileFormatVersion: 2
+guid: b5a24511586672e46a47cba13165cbc6
+AudioImporter:
+  externalObjects: {}
+  serializedVersion: 6
+  defaultSettings:
+    loadType: 0
+    sampleRateSetting: 0
+    sampleRateOverride: 44100
+    compressionFormat: 1
+    quality: 1
+    conversionMode: 0
+  platformSettingOverrides:
+    7:
+      loadType: 0
+      sampleRateSetting: 0
+      sampleRateOverride: 44100
+      compressionFormat: 1
+      quality: 1
+      conversionMode: 0
+  forceToMono: 0
+  normalize: 1
+  preloadAudioData: 1
+  loadInBackground: 0
+  ambisonic: 0
+  3D: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 221202
+  packageName: Dynamic First Person Mobile Controller Kit
+  packageVersion: 1.0.2
+  assetPath: Assets/Dynamic First Person Mobile/Audios/Land_SFX.wav
+  uploadId: 506490

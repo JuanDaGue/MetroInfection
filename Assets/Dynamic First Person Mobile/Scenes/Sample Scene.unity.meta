@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e6d99aad7379a1d42a740a623d5f5247
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 221202
+  packageName: Dynamic First Person Mobile Controller Kit
+  packageVersion: 1.0.2
+  assetPath: Assets/Dynamic First Person Mobile/Scenes/Sample Scene.unity
+  uploadId: 506490

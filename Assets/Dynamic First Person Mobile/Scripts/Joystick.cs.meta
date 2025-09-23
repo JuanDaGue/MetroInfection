@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 6712cdfff5b2a554c9243c2b9bb4bb38
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 221202
+  packageName: Dynamic First Person Mobile Controller Kit
+  packageVersion: 1.0.2
+  assetPath: Assets/Dynamic First Person Mobile/Scripts/Joystick.cs
+  uploadId: 506490

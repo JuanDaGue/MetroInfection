@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: e191b7a3f15fb3a469e7e427ea379b05
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 221202
+  packageName: Dynamic First Person Mobile Controller Kit
+  packageVersion: 1.0.2
+  assetPath: Assets/Dynamic First Person Mobile/Scripts/Editor/MobileButtonEditor.cs
+  uploadId: 506490

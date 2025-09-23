@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 9cdd4f164c6a61d42b1c17ee98003e3b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 221202
+  packageName: Dynamic First Person Mobile Controller Kit
+  packageVersion: 1.0.2
+  assetPath: Assets/Dynamic First Person Mobile/Scripts/Utility/DisplaySliderValue.cs
+  uploadId: 506490

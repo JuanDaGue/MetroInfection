@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 5e09c941eb019ac43abed1294771a224
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 221202
+  packageName: Dynamic First Person Mobile Controller Kit
+  packageVersion: 1.0.2
+  assetPath: Assets/Dynamic First Person Mobile/Prefabs/Canvas.prefab
+  uploadId: 506490

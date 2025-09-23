@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 6d58d8674c0dc95449b70d557d22e177
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 221202
+  packageName: Dynamic First Person Mobile Controller Kit
+  packageVersion: 1.0.2
+  assetPath: Assets/Dynamic First Person Mobile/Fonts/Third Party Notices.txt
+  uploadId: 506490
