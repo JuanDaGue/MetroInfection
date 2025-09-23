@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 7885480086190240231}
   - component: {fileID: 1661494911736322477}
   - component: {fileID: 2381894792192555902}
-  - component: {fileID: 8436571858350289558}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -163,54 +162,54 @@ MonoBehaviour:
   - m_Vertices: 0b0000000e00000012000000
   m_SharedTextures: []
   m_Positions:
-  - {x: -24.160725, y: -37.057266, z: 32.31371}
-  - {x: 24.160725, y: -37.057266, z: 32.31371}
-  - {x: -24.160725, y: 37.057266, z: 32.31371}
-  - {x: 24.160725, y: 37.057266, z: 32.31371}
-  - {x: 24.160725, y: -37.057266, z: 32.31371}
-  - {x: 24.160725, y: -37.057266, z: -32.31371}
-  - {x: 24.160725, y: 37.057266, z: 32.31371}
-  - {x: 24.160725, y: 37.057266, z: -32.31371}
-  - {x: 24.160725, y: -37.057266, z: -32.31371}
-  - {x: -24.160725, y: -37.057266, z: -32.31371}
-  - {x: 24.160725, y: 37.057266, z: -32.31371}
-  - {x: -24.160725, y: 37.057266, z: -32.31371}
-  - {x: -24.160725, y: -37.057266, z: -32.31371}
-  - {x: -24.160725, y: -37.057266, z: 32.31371}
-  - {x: -24.160725, y: 37.057266, z: -32.31371}
-  - {x: -24.160725, y: 37.057266, z: 32.31371}
-  - {x: -24.160725, y: 37.057266, z: 32.31371}
-  - {x: 24.160725, y: 37.057266, z: 32.31371}
-  - {x: -24.160725, y: 37.057266, z: -32.31371}
-  - {x: 24.160725, y: 37.057266, z: -32.31371}
-  - {x: -24.160725, y: -37.057266, z: -32.31371}
-  - {x: 24.160725, y: -37.057266, z: -32.31371}
-  - {x: -24.160725, y: -37.057266, z: 32.31371}
-  - {x: 24.160725, y: -37.057266, z: 32.31371}
+  - {x: -15, y: -25, z: 20}
+  - {x: 15, y: -25, z: 20}
+  - {x: -15, y: 25, z: 20}
+  - {x: 15, y: 25, z: 20}
+  - {x: 15, y: -25, z: 20}
+  - {x: 15, y: -25, z: -20}
+  - {x: 15, y: 25, z: 20}
+  - {x: 15, y: 25, z: -20}
+  - {x: 15, y: -25, z: -20}
+  - {x: -15, y: -25, z: -20}
+  - {x: 15, y: 25, z: -20}
+  - {x: -15, y: 25, z: -20}
+  - {x: -15, y: -25, z: -20}
+  - {x: -15, y: -25, z: 20}
+  - {x: -15, y: 25, z: -20}
+  - {x: -15, y: 25, z: 20}
+  - {x: -15, y: 25, z: 20}
+  - {x: 15, y: 25, z: 20}
+  - {x: -15, y: 25, z: -20}
+  - {x: 15, y: 25, z: -20}
+  - {x: -15, y: -25, z: -20}
+  - {x: 15, y: -25, z: -20}
+  - {x: -15, y: -25, z: 20}
+  - {x: 15, y: -25, z: 20}
   m_Textures0:
-  - {x: 48.32145, y: -73.11453}
-  - {x: 0, y: -73.11453}
-  - {x: 48.32145, y: 1}
+  - {x: 30, y: -49}
+  - {x: 0, y: -49}
+  - {x: 30, y: 1}
   - {x: 0, y: 1}
-  - {x: 64.62742, y: -73.11453}
-  - {x: 0, y: -73.11453}
-  - {x: 64.62742, y: 1}
+  - {x: 40, y: -49}
+  - {x: 0, y: -49}
+  - {x: 40, y: 1}
   - {x: 0, y: 1}
-  - {x: 48.32145, y: -73.11453}
-  - {x: 0, y: -73.11453}
-  - {x: 48.32145, y: 1}
+  - {x: 30, y: -49}
+  - {x: 0, y: -49}
+  - {x: 30, y: 1}
   - {x: 0, y: 1}
-  - {x: 64.62742, y: -73.11453}
-  - {x: 0, y: -73.11453}
-  - {x: 64.62742, y: 1}
+  - {x: 40, y: -49}
+  - {x: 0, y: -49}
+  - {x: 40, y: 1}
   - {x: 0, y: 1}
   - {x: 0, y: 1}
-  - {x: 48.32145, y: 1}
-  - {x: 0, y: -63.62742}
-  - {x: 48.32145, y: -63.62742}
-  - {x: 48.32145, y: -63.62742}
-  - {x: 0, y: -63.62742}
-  - {x: 48.32145, y: 1}
+  - {x: 30, y: 1}
+  - {x: 0, y: -39}
+  - {x: 30, y: -39}
+  - {x: 30, y: -39}
+  - {x: 0, y: -39}
+  - {x: 30, y: 1}
   - {x: 0, y: 1}
   m_Textures2: []
   m_Textures3: []
@@ -248,7 +247,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 2568
+  m_VersionIndex: 2634
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -268,8 +267,8 @@ MonoBehaviour:
   m_Shape:
     rid: 4000627264361333110
   m_ShapeRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_UnmodifiedMeshVersion: 2568
-  m_Size: {x: 48.32145, y: 74.11453, z: 64.62742}
+  m_UnmodifiedMeshVersion: 2634
+  m_Size: {x: 30, y: 50, z: 40}
   m_LocalCenter: {x: 0, y: 0, z: 0}
   references:
     version: 2
@@ -329,26 +328,4 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8213029258478807206}
-  m_Mesh: {fileID: 0}
---- !u!64 &8436571858350289558
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8213029258478807206}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
   m_Mesh: {fileID: 0}

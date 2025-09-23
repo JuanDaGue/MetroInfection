@@ -142,7 +142,7 @@ public class TrainMovementSimulator : MonoBehaviour
             currentSpeed = Mathf.Clamp(currentSpeed, 0, maxSpeed);
             if (environmentController != null)
             {
-                environmentController.SetSpeed(currentSpeed);
+                environmentController.SetEnvironmentSpeed(currentSpeed);
             }
             yield return null;
         }
@@ -157,7 +157,7 @@ public class TrainMovementSimulator : MonoBehaviour
             currentSpeed = Mathf.Clamp(brakeSpeed, 0, maxSpeed);
             if (environmentController != null)
             {
-                environmentController.SetSpeed(currentSpeed);
+                environmentController.SetEnvironmentSpeed(currentSpeed);
             }
             yield return null;
         }
@@ -172,7 +172,7 @@ public class TrainMovementSimulator : MonoBehaviour
             currentSpeed = Mathf.Max(0, currentSpeed);
             if (environmentController != null)
             {
-                environmentController.SetSpeed(currentSpeed);
+                environmentController.SetEnvironmentSpeed(currentSpeed);
             }
         }
     }
@@ -355,7 +355,7 @@ public class TrainMovementSimulator : MonoBehaviour
         currentSpeed = Mathf.Clamp(newSpeed, 0, maxSpeed);
         if (environmentController != null)
         {
-            environmentController.SetSpeed(currentSpeed);
+            environmentController.SetEnvironmentSpeed(currentSpeed);
         }
         
         isMoving = currentSpeed > 0;

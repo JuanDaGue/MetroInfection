@@ -15513,6 +15513,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5e1334978b2a784bbc66ad2a2cc2c8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  centerX: 4
   trackPrefabs:
   - {fileID: 1946837829176298762, guid: 36f35bdd96ae75944809d4a3510fcd98, type: 3}
   initialSegmentCount: 10
@@ -15523,9 +15524,15 @@ MonoBehaviour:
   - {fileID: 7744978283374698696, guid: f0534fb1cc4038545aa971841bd8e743, type: 3}
   - {fileID: 3559206827663821408, guid: 8738c4aaebacc684d8069b82e66047ec, type: 3}
   - {fileID: 8213029258478807206, guid: 8abc99d511e1387408c6f65dc9e3de60, type: 3}
-  buildingRows: 5
-  buildingSpacing: 80
-  buildingOffsetRange: {x: -5, y: 5}
+  buildingSpawnDistance: 100
+  buildingRecycleDistance: -50
+  buildingXRange: {x: 80, y: 80}
+  buildingSpacingRange: {x: 50, y: 50}
+  roadPrefabs:
+  - {fileID: 9201690445351912479, guid: 9402e1483d46f9d439ec197e3a63aaa6, type: 3}
+  roadSegmentLength: 40
+  roadOffsetFromTrack: 30
+  initialRoadSegmentCount: 2
 --- !u!114 &1980695626
 MonoBehaviour:
   m_ObjectHideFlags: 0
