@@ -8,7 +8,7 @@ public class Playable : Carrier
 {
     [Header("Sistemas del jugador")]
     [SerializeField] protected EnergySystem energiaSystem;
-    [SerializeField] protected XpSystem xpSystem;
+    //[SerializeField] protected XpSystem xpSystem;
     //[SerializeField] protected SkillSystem skillSystem;
     protected virtual void Update()
     {

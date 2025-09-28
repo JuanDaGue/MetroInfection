@@ -1,36 +1,58 @@
+using System;
 using UnityEngine;
-using UnityEngine.Events;
+
 
 public class LifeSystem : Statistics
 {
-    [Header("Health Events")]
-    public UnityEvent OnDeath;
 
-    public virtual void TakeDamage(float damage)
+
+    /// <summary>
+    /// Se lanza cuando la vida llega a cero.
+    /// </summary>
+    public event Action OnDeath;
+
+protected override void Awake()
+{
+    base.Awake();
+    // Suscribirse al evento de llegar al mínimo
+    OnMinReached += HandleDeath;
+}
+
+    /// <summary>
+    /// Aplica daño; si amount &gt; 0, reduce vida.
+    /// </summary>
+    public void TakeDamage(float amount)
     {
-        if (damage < 0)
-        {
-            //OnDeath.Invoke();
-            Destroy(gameObject);
-            return;
-        }
-        Subtract(damage);
-        if (Current <= Min) OnDeath?.Invoke();
+        if (amount <= 0f) return;
+        Subtract(amount);
     }
 
+    /// <summary>
+    /// Cura hasta maxValue.
+    /// </summary>
     public void Heal(float amount)
     {
-        if (amount < 0) return;
+        if (amount <= 0f) return;
         Add(amount);
     }
+
+    /// <summary>
+    /// Intenta aplicar daño; devuelve true si había suficiente vida.
+    /// </summary>
     public bool CanTakeDamage(float amount)
     {
-        if (Current >= amount)
-            {
-                Subtract(amount);
-                return true;
-            }
+        if (amount <= 0f) return false;
+        if (Current > amount)
+        {
+            Subtract(amount);
+            return true;
+        }
         return false;
     }
 
+    private void HandleDeath()
+    {
+        OnDeath?.Invoke();
+        Destroy(gameObject);
+    }
 }

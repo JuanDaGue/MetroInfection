@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6691986887092356820}
   - component: {fileID: -7344180493550201314}
   - component: {fileID: 9038781581068039186}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Enemie
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -163,12 +163,3 @@ MonoBehaviour:
   maxValue: 100
   minValue: 0
   currentValue: 100
-  OnValueChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  OnMinReached:
-    m_PersistentCalls:
-      m_Calls: []
-  OnDeath:
-    m_PersistentCalls:
-      m_Calls: []

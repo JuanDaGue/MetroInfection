@@ -3791,7 +3791,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &330585544
 AudioListener:
   m_ObjectHideFlags: 0
@@ -4147,10 +4147,10 @@ MonoBehaviour:
   rotationSpeed: 5
   enemyTag: Enemy
   fireRate: 1
-  damage: 10
+  damage: 50
   enemyLayerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   rotationBase: {fileID: 364162016}
   barrel: {fileID: 0}
   firePoint: {fileID: 869513771}
@@ -7198,6 +7198,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1857715608}
+  - {fileID: 787771627}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &670110740
@@ -7420,6 +7421,67 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 671759675}
   m_Mesh: {fileID: 2698951212011404582, guid: 03b1076bd4387b341a1fad00728bc87b, type: 3}
+--- !u!1001 &676709865
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 662785485}
+    m_Modifications:
+    - target: {fileID: 860997798204026208, guid: 1a53ece4564a0c34c8af8000cb85db71, type: 3}
+      propertyPath: damageableTag
+      value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 6009232251150843800, guid: 1a53ece4564a0c34c8af8000cb85db71, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 20.25446
+      objectReference: {fileID: 0}
+    - target: {fileID: 6009232251150843800, guid: 1a53ece4564a0c34c8af8000cb85db71, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 6009232251150843800, guid: 1a53ece4564a0c34c8af8000cb85db71, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 108.6847
+      objectReference: {fileID: 0}
+    - target: {fileID: 6009232251150843800, guid: 1a53ece4564a0c34c8af8000cb85db71, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6009232251150843800, guid: 1a53ece4564a0c34c8af8000cb85db71, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6009232251150843800, guid: 1a53ece4564a0c34c8af8000cb85db71, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6009232251150843800, guid: 1a53ece4564a0c34c8af8000cb85db71, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6009232251150843800, guid: 1a53ece4564a0c34c8af8000cb85db71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6009232251150843800, guid: 1a53ece4564a0c34c8af8000cb85db71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6009232251150843800, guid: 1a53ece4564a0c34c8af8000cb85db71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8810435594493460957, guid: 1a53ece4564a0c34c8af8000cb85db71, type: 3}
+      propertyPath: m_Name
+      value: CustomFirstPerson
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1a53ece4564a0c34c8af8000cb85db71, type: 3}
 --- !u!1 &684613509
 GameObject:
   m_ObjectHideFlags: 0
@@ -10341,6 +10403,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1395405065}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &787771627 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6009232251150843800, guid: 1a53ece4564a0c34c8af8000cb85db71, type: 3}
+  m_PrefabInstance: {fileID: 676709865}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &812728351
 GameObject:
   m_ObjectHideFlags: 0
@@ -11144,10 +11211,10 @@ MonoBehaviour:
   rotationSpeed: 5
   enemyTag: Enemy
   fireRate: 1
-  damage: 10
+  damage: 50
   enemyLayerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   rotationBase: {fileID: 913350536}
   barrel: {fileID: 0}
   firePoint: {fileID: 305995359}
@@ -23580,9 +23647,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 662785485}
     m_Modifications:
+    - target: {fileID: 1593727746557118, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1773623360729482, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
       propertyPath: m_Name
       value: First Person Controller
+      objectReference: {fileID: 0}
+    - target: {fileID: 1773623360729482, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4207293392497186, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
       propertyPath: m_LocalScale.x
