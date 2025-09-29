@@ -236,6 +236,7 @@ public class WeaponController : MonoBehaviour
         if (impactPrefab && impactPool != null)
         {
             var go = impactPool.Get(hit.point + hit.normal * 0.01f, Quaternion.LookRotation(hit.normal));
+            go.transform.SetParent(hit.collider.transform);
             StartCoroutine(ReturnAfterDelay(go, 4f, impactPool));
         }
 

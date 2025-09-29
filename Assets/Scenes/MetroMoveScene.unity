@@ -16796,26 +16796,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1640094767}
     m_Modifications:
-    - target: {fileID: 561480944303798657, guid: 1a53ece4564a0c34c8af8000cb85db71, type: 3}
-      propertyPath: jumpSource
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 561480944303798657, guid: 1a53ece4564a0c34c8af8000cb85db71, type: 3}
-      propertyPath: landingSource
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 561480944303798657, guid: 1a53ece4564a0c34c8af8000cb85db71, type: 3}
-      propertyPath: footstepSource
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 561480944303798657, guid: 1a53ece4564a0c34c8af8000cb85db71, type: 3}
-      propertyPath: crouchEndSource
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 561480944303798657, guid: 1a53ece4564a0c34c8af8000cb85db71, type: 3}
-      propertyPath: crouchStartSource
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 598906122261370316, guid: 1a53ece4564a0c34c8af8000cb85db71, type: 3}
       propertyPath: m_Name
       value: CustomFirstPerson

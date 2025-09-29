@@ -4094,7 +4094,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.49056602, g: 0.122641504, b: 0.122641504, a: 0.8666667}
-  m_RaycastTarget: 0
+  m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -7689,7 +7689,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.49056602, g: 0.122641504, b: 0.122641504, a: 0.8666667}
-  m_RaycastTarget: 0
+  m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -7717,7 +7717,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d54531977ecb194c95e2d3aa7a5d72a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ControlPath: <Gamepad>/buttonWest
+  m_ControlPath: <Keyboard>/enter
 --- !u!1 &5154978753008289756
 GameObject:
   m_ObjectHideFlags: 0
@@ -8845,19 +8845,7 @@ MonoBehaviour:
     m_ActionId: a4aeffa0-7987-42de-a21d-4509853ead5c
     m_ActionName: 'Player/Look[/Mouse/delta]'
   - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 5047267557633008307}
-        m_TargetAssemblyTypeName: WeaponController, Assembly-CSharp
-        m_MethodName: OnFire
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_ActionId: d21cd7e5-c010-4c37-a061-68a5f1eaa982
     m_ActionName: 'Player/Attack[/Mouse/leftButton,/Keyboard/enter]'
   - m_PersistentCalls:
@@ -8976,6 +8964,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 199abbbc-0cdd-4db2-8865-2202e786d754
     m_ActionName: 'Player/Reload[/Keyboard/r]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5047267557633008307}
+        m_TargetAssemblyTypeName: WeaponController, Assembly-CSharp
+        m_MethodName: OnFire
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 814c1e8f-86ab-42e0-8dfb-463820d51132
+    m_ActionName: 'Player/Shoot[/Mouse/leftButton,/Keyboard/enter,/Keyboard1/enter]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -9130,12 +9134,12 @@ MonoBehaviour:
   adsSpreadMultiplier: 0.4
   recoilPerShot: 8
   recoilSideRange: {x: -0.8, y: 0.8}
-  muzzlePrefab: {fileID: 1568694433296776140, guid: 2aa4614dbee5693418ba499a3d735adc, type: 3}
-  impactPrefab: {fileID: 1568694433296776140, guid: 2aa4614dbee5693418ba499a3d735adc, type: 3}
+  muzzlePrefab: {fileID: 1743301284569550, guid: ad2ab49d0a2a17148bd51c93d977bdbc, type: 3}
+  impactPrefab: {fileID: 1096893136476370, guid: 5f6823eaf92e8d64ba63044a86c44987, type: 3}
   poolSize: 12
   hitMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 8
   damageableTag: Enemy
   fireClip: {fileID: 8300000, guid: 175d78df098338941b7c0715d3a0f5e5, type: 3}
   dryClip: {fileID: 8300000, guid: 33a5becf0277d9f43a22919171141147, type: 3}
@@ -10194,9 +10198,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 0
+  m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 0
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -11688,7 +11692,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.49056602, g: 0.122641504, b: 0.122641504, a: 0.8666667}
-  m_RaycastTarget: 0
+  m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -13737,7 +13741,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.49056602, g: 0.122641504, b: 0.122641504, a: 0.8666667}
-  m_RaycastTarget: 0
+  m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -14394,7 +14398,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 26.041443}
+  m_AnchoredPosition: {x: 0, y: 26.041382}
   m_SizeDelta: {x: -0.6500244, y: 52.916}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5069779287985453298
@@ -14935,7 +14939,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -0.0009765625, y: -26.308655}
+  m_AnchoredPosition: {x: -0.0009765625, y: -26.308716}
   m_SizeDelta: {x: -0.6500244, y: 53.451996}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &465109463460306351
