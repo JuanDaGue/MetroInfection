@@ -5894,6 +5894,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6445050713584267430}
+  - component: {fileID: 4341650994508724004}
   m_Layer: 0
   m_Name: FpsGlock
   m_TagString: Untagged
@@ -5920,6 +5921,29 @@ Transform:
   - {fileID: 988785092773767872}
   m_Father: {fileID: 6315187936176790131}
   m_LocalEulerAnglesHint: {x: 0, y: 93.34, z: 0}
+--- !u!136 &4341650994508724004
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4380215412862446968}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.0231892
+  m_Height: 14.915845
+  m_Direction: 0
+  m_Center: {x: 1.5428792, y: 0.5291319, z: 3.680049}
 --- !u!1 &4395829986205816128
 GameObject:
   m_ObjectHideFlags: 0
