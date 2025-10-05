@@ -14,7 +14,7 @@ public class FirstPersonLook_m : MonoBehaviour
     public Transform cameraTransform;
 
     [Header("Look Settings")]
-    [Range(0.01f, 10f)] public float sensitivity = 0.15f;   // base sensitivity multiplier
+    [Range(0.01f, 20f)] public float sensitivity = 0.15f;   // base sensitivity multiplier
     [Range(0.01f, 0.5f)] public float smoothing = 0.08f;     // lower = snappier, higher = smoother
     public bool invertY = false;
     public float minVertical = -85f;

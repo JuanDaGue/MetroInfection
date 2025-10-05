@@ -115,7 +115,7 @@ public class FirstPerstonStepsAudios : MonoBehaviour
         Vector2 curXZ = GetPlayerXZ();
         float delta = Vector2.Distance(curXZ, lastPlayerPosXZ);
         lastPlayerPosXZ = curXZ;
-        Debug.Log("Delta: " + delta + " Velocity Threshold: " + velocityThreshold + " Grounded: " + isGrounded);
+        //Debug.Log("Delta: " + delta + " Velocity Threshold: " + velocityThreshold + " Grounded: " + isGrounded);
         // ignore extremely small jitter
         if (delta < velocityThreshold || !isGrounded)
         {
@@ -123,17 +123,17 @@ public class FirstPerstonStepsAudios : MonoBehaviour
             distanceAccumulator = 0f;
             return;
         }
-       Debug.Log("Distance Accumulator: " + distanceAccumulator);
+       //Debug.Log("Distance Accumulator: " + distanceAccumulator);
         float effectiveStepDistance = stepDistance;
         if (playerController.IsCrouched()) effectiveStepDistance *= 1.15f; // tweak for crouch
         if (playerController.GetCurrentSpeed() > playerController.walkSpeed + 0.01f) // running
             effectiveStepDistance *= runningStepMultiplier;
 
         distanceAccumulator += delta;
-        Debug.Log("Distance Accumulator: " + distanceAccumulator+ " Effective Step Distance: " + effectiveStepDistance);
+        //Debug.Log("Distance Accumulator: " + distanceAccumulator+ " Effective Step Distance: " + effectiveStepDistance);
         if (distanceAccumulator >= effectiveStepDistance)
         {
-            Debug.Log("Play Footstep");
+            //Debug.Log("Play Footstep");
             PlayFootstep();
             distanceAccumulator = 0f;
         }
@@ -147,7 +147,7 @@ public class FirstPerstonStepsAudios : MonoBehaviour
 
     void PlayFootstep()
     {
-        Debug.Log("Play Footstep: " + footstepSource + " : " + walkSteps + " : " + runSteps + " : " + crouchSteps);
+        //Debug.Log("Play Footstep: " + footstepSource + " : " + walkSteps + " : " + runSteps + " : " + crouchSteps);
         if (footstepSource == null) return;
 
         AudioClip[] pool = walkSteps;
@@ -187,9 +187,9 @@ public class FirstPerstonStepsAudios : MonoBehaviour
     // Utility: play a random clip from an array on the given source (non-one-shot playback)
     void PlayRandomClip(AudioSource source, AudioClip[] clips)
     {
-        Debug.Log("Play Random Clip:"+ source+" : "+ clips);
+       // Debug.Log("Play Random Clip:"+ source+" : "+ clips);
         if (source == null || clips == null || clips.Length == 0) return;
-        Debug.Log("Play Random Clip");
+       // Debug.Log("Play Random Clip");
         AudioClip clip = clips[Random.Range(0, clips.Length)];
         if (clips.Length > 1)
         {

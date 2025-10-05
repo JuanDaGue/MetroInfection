@@ -15,13 +15,30 @@ public class EnemyManager : MonoBehaviour
     public List<Transform> Targets = new List<Transform>();
     private int currentWave = 0;
     private bool isWaveInProgress = false;
-
-    void Start()
+    private bool CanSpawningEnemies = true;
+    public bool canSpawningEnemies
     {
-        // Start the first wave after a delay
-        StartCoroutine(StartWaveAfterDelay(timeBetweenWaves));
+        get { return CanSpawningEnemies; }
+        set { CanSpawningEnemies = value; }
     }
+    // void Start()
+    // {
+    //     // Start the first wave after a delay
+    //     if (isEnemySpawning) return;
+    //     isEnemySpawning = true;
+    //     StartCoroutine(StartWaveAfterDelay(timeBetweenWaves));
+    // }
+    public void StartWave()
+    {
+        if (!canSpawningEnemies) return;
 
+        else
+        {
+            Debug.Log("Enemy spawning is habilitated");
+            StartCoroutine(StartWaveAfterDelay(timeBetweenWaves));
+        }
+
+    }
     IEnumerator StartWaveAfterDelay(float delay)
     {
         yield return new WaitForSeconds(delay);

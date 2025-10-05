@@ -52,7 +52,8 @@ public class WeaponController : MonoBehaviour
     // Pools
     SimplePool muzzlePool;
     SimplePool impactPool;
-
+    [Header("Animations")]
+    [SerializeField] private Animator anim;
     void Awake()
     {
         audioSource = GetComponent<AudioSource>();
@@ -70,7 +71,12 @@ public class WeaponController : MonoBehaviour
         impactPool = impactPoolGO.AddComponent<SimplePool>();
         if (impactPrefab) impactPool.Initialize(impactPrefab, poolSize);
     }
-
+    void Start()
+    {
+        Animator anin = GetComponentInChildren<Animator>();
+        anim.SetBool("IsShooting", firing);
+        anim.SetBool("IsReloading", isReloading);
+    }
     void Update()
     {
         // For automatic weapons, maintain firing while hold
@@ -171,6 +177,7 @@ public class WeaponController : MonoBehaviour
         currentAmmo--;
 
         // audio
+        anim.SetBool("IsShooting", true);
         if (fireClip) audioSource.PlayOneShot(fireClip, volume);
 
         // muzzle flash (pooled)
@@ -214,6 +221,8 @@ public class WeaponController : MonoBehaviour
 
         // UI update for ammo can be invoked through an event or direct reference
         UpdateAmmoUI();
+       
+
     }
 
     // helper: returns direction perturbed by degrees angle
@@ -245,7 +254,7 @@ public class WeaponController : MonoBehaviour
         if (health != null)
         {
             health.TakeDamage(damage);
-            Debug.Log("Hit " + hit.collider.name + " for " + damage + " damage.");
+            //Debug.Log("Hit " + hit.collider.name + " for " + damage + " damage.");
             health.OnDeath += delegate { Debug.Log("Player died."); };
         }
         else
@@ -255,7 +264,7 @@ public class WeaponController : MonoBehaviour
             {
                 var h = hit.collider.GetComponentInParent<LifeSystem>();
                 if (h != null) h.TakeDamage(damage);
-                Debug.Log("Hit " + hit.collider.name + " for " + damage + " damage.");
+                //Debug.Log("Hit " + hit.collider.name + " for " + damage + " damage.");
                 h.OnDeath += delegate { Debug.Log("Player died."); };
 
             }
@@ -277,6 +286,7 @@ public class WeaponController : MonoBehaviour
         if (currentAmmo == magazineSize) yield break;
 
         isReloading = true;
+        anim.SetBool("IsReloading", true);
         if (reloadClip) audioSource.PlayOneShot(reloadClip, volume);
 
         // optionally trigger arm/animator reload here
@@ -284,7 +294,7 @@ public class WeaponController : MonoBehaviour
 
         currentAmmo = magazineSize;
         isReloading = false;
-
+        anim.SetBool("IsReloading", false);
         UpdateAmmoUI();
     }
 
@@ -296,6 +306,7 @@ public class WeaponController : MonoBehaviour
         if (go == null || pool == null) yield break;
         yield return new WaitForSeconds(delay);
         pool.Return(go);
+        anim.SetBool("IsShooting", false);
     }
 
     void PlayDry()
@@ -321,5 +332,7 @@ public class WeaponController : MonoBehaviour
     void OnDisable()
     {
         firing = false;
+        anim.SetBool("IsShooting", firing);
+;
     }
 }
