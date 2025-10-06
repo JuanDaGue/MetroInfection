@@ -10206,10 +10206,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeOnStation: 100
-  timeInTravel: 100
+  timeInTravel: 10
   stationSceneName: StationScene
   travelSceneName: MetroMoveScene
-  enemyManager: {fileID: 0}
+  enemyManager: {fileID: 1744548761}
 --- !u!114 &1568076552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10224,7 +10224,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   initialScene: MainCoreScene
   scenesToLoad: []
-  enemyManager: {fileID: 0}
 --- !u!1 &1575323127
 GameObject:
   m_ObjectHideFlags: 0

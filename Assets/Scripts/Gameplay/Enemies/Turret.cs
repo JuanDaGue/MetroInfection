@@ -124,7 +124,7 @@ public class Turret : MonoBehaviour
         // Aplicar daño mediante raycast
         RaycastHit hit;
         bool hitSuccess = Physics.Raycast(firePoint.position, firePoint.forward, out hit, range, enemyLayerMask);
-        Debug.Log("Hit " + hitSuccess);
+        //Debug.Log("Hit " + hitSuccess);
         //Debug.Log("Hit " + hit.collider.name + " for " + damage + " damage.");
         if (hitSuccess)
         {

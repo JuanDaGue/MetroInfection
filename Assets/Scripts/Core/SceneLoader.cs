@@ -7,7 +7,7 @@ public class SceneLoader : MonoBehaviour
     [Header("Scene Management")]
     [SerializeField] private string initialScene = "MetroMoveScene";
     [SerializeField] private string[] scenesToLoad;
-    [SerializeField] private EnemyManager enemyManager;
+
 
     // Singleton for easy access
     public static SceneLoader Instance { get; private set; }
