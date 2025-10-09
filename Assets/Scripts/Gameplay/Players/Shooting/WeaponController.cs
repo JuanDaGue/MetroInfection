@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(AudioSource))]
 public class WeaponController : MonoBehaviour
@@ -54,6 +55,8 @@ public class WeaponController : MonoBehaviour
     SimplePool impactPool;
     [Header("Animations")]
     [SerializeField] private Animator anim;
+    [SerializeField] private GameObject shootButton;
+    [SerializeField] private GameObject reloadButton;
     void Awake()
     {
         audioSource = GetComponent<AudioSource>();
@@ -76,6 +79,8 @@ public class WeaponController : MonoBehaviour
         Animator anin = GetComponentInChildren<Animator>();
         anim.SetBool("IsShooting", firing);
         anim.SetBool("IsReloading", isReloading);
+        shootButton.SetActive(true);
+        reloadButton.SetActive(false);
     }
     void Update()
     {
@@ -163,6 +168,8 @@ public class WeaponController : MonoBehaviour
 
         if (currentAmmo <= 0)
         {
+            shootButton.SetActive(false);
+            reloadButton.SetActive(true);
             PlayDry();
             lastFireTime = Time.time;
             return;
@@ -296,6 +303,8 @@ public class WeaponController : MonoBehaviour
         isReloading = false;
         anim.SetBool("IsReloading", false);
         UpdateAmmoUI();
+        shootButton.SetActive(true);
+        reloadButton.SetActive(false);
     }
 
     // ---------------------------
